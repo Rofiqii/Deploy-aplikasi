@@ -1,0 +1,52 @@
+/* Override styling Select2 agar sesuai dengan form-control */
+.select2-container .select2-selection--single {
+    height: calc(1.55em + 0.875rem + 2px); /* Tinggi input form-control */
+    padding: 0.375rem 0.75rem; /* Padding sama dengan form-control */
+    font-size: 0.875rem; /* Ukuran font form-control */
+    line-height: 1.5; /* Line height form-control */
+    color: #adb5bd; /* Warna teks form-control */
+    background-color: #fff; /* Background form-control */
+    border: 1px solid #dbe1e6; /* Border sesuai dengan form-control */
+    border-radius: 0.50rem; /* Border radius form-control */
+    box-shadow: none; /* Menghilangkan shadow Select2 */
+    outline: none; /* Hilangkan outline default Select2 */
+    display: flex;
+    align-items: center;
+}
+
+/* Ubah tampilan saat focus agar tetap sesuai dengan form-control */
+.select2-container--default .select2-selection--single:focus {
+    border-color: #80bdff; /* Border saat focus sama seperti form-control Bootstrap */
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Shadow saat focus */
+}
+
+/* Styling arrow pada Select2 */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    top: 50%; /* Posisikan panah di tengah */
+    transform: translateY(-50%);
+    right: 0.75rem; /* Sesuaikan dengan padding */
+    width: 16px; /* Ukuran panah */
+}
+
+/* Custom height dan padding untuk dropdown list Select2 */
+.select2-container--default .select2-dropdown {
+    border-radius: 0.25rem; /* Sesuaikan dengan form-control */
+    border: 1px solid #ced4da;
+}
+
+/* Mengubah ukuran font di dalam input Select2 (tampilan pilihan yang dipilih) */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 0.875rem; /* Sesuaikan dengan ukuran yang kamu inginkan */
+    line-height: 1.5; /* Sesuaikan dengan line-height */
+    color: #768b9e; /* Warna teks dalam input */
+}
+
+/* Styling item di dropdown list Select2 */
+.select2-container--default .select2-results__option {
+    padding: 0.375rem 0.75rem; /* Sama seperti padding di form-control */
+    font-size: 0.8rem; /* Sesuaikan ukuran font di dalam dropdown */
+    line-height: 1.5; /* Sesuaikan dengan line-height form-control */
+    color: #495057; 
+}
